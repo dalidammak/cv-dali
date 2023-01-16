@@ -1,0 +1,292 @@
+body{
+  font-weight: 400;
+  font-family: Roboto,Arial,sans-serif;
+  color: #747474;
+  background-color: #f3f2ef;
+}
+
+/* Navigarion bar */
+.header {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: hsla(0,0%,100%,.98);
+  transition: box-shadow .25s ease 0s;
+}
+.header a{
+  display: inline-block;
+}
+.header li a:hover{
+  color: #00b39b;
+  transition-duration: 0.25s;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-menu {
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 2em;
+}
+.main-menu a {
+  color: #ababab;
+  display: block;
+  text-decoration: none;
+  padding: 0 0.6em;
+}
+.main-menu li {
+  display: inline-block;
+  font-size: 18px;
+}
+.main-menu .is-current {
+  color: #00b39b;
+}
+/* End of Navigation bar */
+.main-section{
+  margin-top: 100px;
+}
+
+.profil-picture{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 50px;
+  border-radius: 1000px;
+  animation: moveFromBottomToTop 1.15s ease-in-out infinite;
+}
+@keyframes moveFromBottomToTop {
+  0% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+.name {
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+span {
+  animation: caret 1s steps(1) infinite;
+  
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.bio-title{
+  color: #00b39b;
+}
+.bio{
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(68, 70, 72);
+  background-color: white;
+  width: 70%;
+  padding: 25px 10px; 
+  margin: 0 auto;
+  margin-top: 80px; 
+  margin-bottom: 20px;
+}
+p{
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.media-icon{
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+  justify-content: space-between;
+}
+.media-icon:hover{
+  opacity: 0.6;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+/* diploma page */
+.container{
+  margin-top: 80px;
+}
+
+.container-box{
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(68, 70, 72);
+  background-color: white;
+  width: 70%;
+  padding: 25px 10px; 
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.title{
+  margin-top: 10px;
+  margin-left: 220px;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.try, .try1{
+  display: flex;
+}
+
+.ecole-logo{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.container-title{
+  display: inline-block;
+  color: #00b39b;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 35px;
+}
+
+.paragraph{
+  width: 50%;
+}
+
+p{
+  margin: 0;
+}
+
+.diplome-picture{
+  width: 450px;
+  height: 200px;
+  margin-left: 580px;
+  margin-top: -190px;
+  border-radius: 15px;
+}
+/* End of diploma page */
+
+/* Compétance */
+.try{
+  margin-left: 200px;
+}
+/* End of compétance page */
+
+/* Events */ 
+.container-title1{
+  display: inline-block;
+  color: #00b39b;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discription{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.first-name{
+  font-weight: bolder;
+}
+.last-name{
+  font-weight: lighter;
+}
+.version{
+  margin-top: 20px;
+  font-size: 20px;
+}
+h2{
+  font-size: 16px;
+  color: #aaa7a7;
+  margin-top: -56px;
+  margin-left: 430px;
+}
+.video-media{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* End of Events */
+
+/* Subjects */
+
+.subject-logo{
+  width: 250px;
+  margin-left: 400px;
+}
+.container-title-subject{
+  color: #00b39b;
+  text-align: center;
+}
+/* End of sebjects */
+
+/* Passion */
+.try5{
+  display: flex;
+}
+
+.pictures{
+  line-height: 70px;
+  margin-bottom: -30px;
+}
+
+.foot-picture{
+  width: 400px;
+  height: 200px;
+  margin-left: 15px;
+  margin-right: -25px;
+  border-radius: 10px;
+  animation: zoomOut 2s;
+}
+@keyframes zoomOut {
+  from {transform: scale(1.2);}
+  50% {transform: scale(1);}
+  to {transform: scale(1);}
+}
+.foot-picture:hover{
+  animation: zoom 2s infinite;
+}
+@keyframes zoom {
+  from {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  to {transform: scale(1.2);}
+}
+
+.passion-description{
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  width: 90%;
+  align-items: center;
+  color: #00b39b;
+}
+/* End of passion */
+
